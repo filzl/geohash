@@ -9,7 +9,7 @@ Since it's such a simple project I only make use of gcc, which can be downloaded
 ### Windows
 - Open a command prompt window in the the project directory, then compile by typing `compile` and hit enter.
 ### Linux/macOS
-- Open the terminal in the project directory, then compile by typing `./compile.sh` and hit enter.
+- Open the terminal in the project directory, then compile by typing `bash compile.sh` and hit enter.
 
 ## Executing
 ### Windows
