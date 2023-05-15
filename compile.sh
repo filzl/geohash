@@ -1,0 +1,1 @@
+gcc -std=c89 --pedantic main.c -o main
