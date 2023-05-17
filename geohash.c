@@ -6,6 +6,7 @@
 
 /* Local includes */
 #include "geohash.h"
+#include "stringsort.c"
 
 char base32(unsigned n){
 	n %= 32; /* This function is exclusively accessed by other functions, but you never know... */
@@ -244,6 +245,7 @@ unsigned long geohash_region(double nwlat, double nwlon, double selat, double se
 	free(tmpcoords);
 
 	*hashlist = (char**)realloc(*hashlist, count*sizeof(char**));	/* Freeing of excess memory (2x-ing every time is not necessarily spatially efficient) */
+	stringsort(*hashlist, count);
 
 	return count;
 }
